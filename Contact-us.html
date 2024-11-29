@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="../css files/Contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="headder">
+        <div class="logo">
+            <img src="../asserts/Green and Blue Playful Illustrated World Travel Logo.png" alt="logo" width="70px">
+        </div>
+        <h1>Scorpio Adventures</h1>
+        <ul>
+            <li><a href="../html code/Home.html">Home <i class="fas fa-home"></i></a></li>
+            <li id="account-options">
+                <a href="../html code/login.html" id="account-link"><i class="fas fa-user"></i></a>
+                <div id="account-dropdown" style="display: none;">
+                    <button id="logout-btn">Logout</button>
+                    <button id="account-info-btn">Account Info</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="bgimage">
+            <img src="../asserts/Large picture of starry sky with constellation, night sky as texture or background.jpg" alt="background pic">
+        </div>
+    </div>
+    <div class="informations">
+        <div class="information">
+            <h2>GET IN TOUCH</h2>
+            <form id="contactForm">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <span id="firstNameError" class="error"></span>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <span id="lastNameError" class="error"></span>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <span id="emailError" class="error"></span>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                <span id="phoneError" class="error"></span>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+                <span id="messageError" class="error"></span>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="second">
+                <ul>
+                    <li><a href="#" onclick="showPopup('phone')"><i class="fas fa-phone"></i> Phone <br> 1234-4567890</a></li>
+                    <li><a href="#" onclick="showPopup('fax')"><i class="fas fa-fax"></i> Fax <br> 12-1234-1234</a></li>
+                    <li><a href="#" onclick="showPopup('email')"><i class="far fa-envelope"></i> Email <br> scorpioAdventure@yahoo.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pic2">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.083044936925!2d-122.41941548468193!3d37.77492927975933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f8b16b0d%3A0x4d42c6399d2c24d7!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623008566329!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        </div>
+        <div class="pic1">
+            <img src="../asserts/it’s where the wild things are! (1).jpg" alt="img 2">
+        </div>
+    </div>
+    <div class="below">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="dropdown">
+            <span onclick="toggleDropdown(this)">What types of travel experiences does your agency specialize in?</span>
+            <div class="dropdown-content">
+                Scorpio Adventures specializes in providing curated travel packages, trending deals, and last-minute offers for a variety of experiences, including cruises, vacations, and spontaneous getaways.
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <span onclick="toggleDropdown(this)">How can I book my trip with your agency?</span>
+            <div class="dropdown-content">
+                You can visit our website ScorpioAdventure.
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <span onclick="toggleDropdown(this)">What measures does your agency take to ensure the general health and safety of travelers during their journeys?</span>
+            <div class="dropdown-content">
+                We have the best healthcare team with us to ensure our tourists' health and safety.
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <span onclick="toggleDropdown(this)">Can your agency assist with customizing travel itineraries to suit specific preferences or interests?</span>
+            <div class="dropdown-content">
+                At Scorpio Adventures, we specialize in crafting custom travel itineraries tailored to your specific preferences and interests.
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <span onclick="toggleDropdown(this)">Can you provide information on the accessibility of destinations and accommodations for travelers with mobility issues or disabilities?</span>
+            <div class="dropdown-content">
+                We prioritize accessibility for all travelers, ensuring destinations and accommodations cater to mobility issues or disabilities.
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="footer">
+        © [2024] Scorpio Adventures<br>
+        All rights preserved<br>
+        <span class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </span>
+    </div>
+
+    <script src="../javascript/contact-us.js"></script>
+</body>
+
+</html>

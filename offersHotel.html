@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+    <title>Package Bucket</title>
+    <link rel="stylesheet" href="../css files/Create-offer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css files/createOffer.css">
+    <script src="../javascript/offerHotel.js"></script>
+</head>
+
+<body>
+    <div class="headder">
+        <div class="logo">
+            <img src="../asserts/Green and Blue Playful Illustrated World Travel Logo.png" alt="logo" width="70px">
+        </div>
+        <h1>Scorpio Adventures</h1>
+        <ul>
+            <li><a href="../html code/Home.html">Home <i class="fas fa-home"></i></a></li>
+            <li id="account-options">
+                <a href="../html code/login.html" id="account-link"><i class="fas fa-user"></i></a>
+                <div id="account-dropdown" style="display: none;">
+                    <button id="logout-btn">Logout</button>
+                    <button id="account-info-btn">Account Info</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="bgimage">
+            <img src="../asserts/Large picture of starry sky with constellation, night sky as texture or background.jpg"
+                alt="background pic">
+        </div>
+    </div>
+    <div class="offer-section">
+        <h2>Make Your Own Offer</h2>
+        <form id="offer-form">
+            <div class="form-group">
+                <label for="Trip Type">Is this a solo trip?</label>
+                <select id="solo-trip" name="solo-trip">
+                    <option value="Choose">choose</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="duration">Time Duration (days):</label>
+                <input type="number" id="duration" name="duration" min="1" required placeholder="select days for trip">
+            </div>
+            <div class="form-group">
+                <label for="country">Destination Country:</label>
+                <select id="country" name="country">
+                    <option value="Choose">Choose</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hotel">Hotel Type:</label>
+                <select id="hotel" name="hotel">
+                    <option value="Choose">Choose</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="restaurant">Restaurant Type:</label>
+                <select id="restaurant" name="restaurant">
+                    <option value="Choose"> Choose</option>
+                    <option value="Casual" data-price="3000">Casual - ₨3000/day</option>
+                    <option value="Fine Dining" data-price="6000">Fine Dining - ₨6000/day</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="calculateOffer()">Calculate Total</button>
+                <button type="button" onclick="window.location.href='OffersBookNow.html';">Book Now</button>
+            </div>
+
+        </form>
+        <p id="total-price"><strong>Price: ₨ 0</strong> </p>
+        <p id="discounted-price"><strong>Discounted Price: ₨ 0</strong></p>
+    </div>
+
+    <button class="Go-Back" onclick="window.location.href = 'Offers.html';">GO Back</button>
+    <div class="footer">
+        © [2024] Scorpio Adventures<br>
+        All rights reserved<br>
+        <span class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </span>
+    </div>
+</body>
+
+</html>

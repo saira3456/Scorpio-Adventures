@@ -1,0 +1,208 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+.headder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin-bottom to create space between header and next div */
+    border-radius: 20px;
+}
+
+.second {
+    text-align: center; /* Center the list items */
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 30%;
+}
+
+.second ul {
+    list-style-type: none; /* Remove list decoration */
+    padding: 0;
+    margin: 0;
+}
+
+.second ul li {
+    display: inline; /* Display list items in a single line */
+    margin-right: 10px; /* Add some space between list items */
+}
+
+.footer {
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+.fa-facebook {
+    background: #3B5998; /* Facebook blue */
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE; /* Twitter blue */
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F; /* Instagram pink */
+    color: white;
+}
+
+ul {
+    color: #FFD700;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFD700; /* set color of links to yellow */
+    text-decoration: none; /* remove underlining */
+}
+
+.headder .navbar li a {
+    color: #FFD700; /* set color of account button to yellow */
+}
+
+.headder ul {
+    display: flex;
+    flex-direction: row; /* Display list items in a column */
+    align-items: flex-end; /* Align items to the end of the column */
+}
+
+.headder li {
+    margin-right: 15px;
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+.headder li a {
+    color: #FFD700; /* Set color of text to golden */
+}
+
+.headder li i {
+    color: white; /* Set color of icons to white */
+}
+
+.bgimage img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ensure the image covers the entire container */
+    z-index: -1;
+}
+.below {
+    text-align: center; /* Center the list items */
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.below h2 {
+    margin-bottom: 20px; /* Add some space below the h2 */
+}
+
+.below p {
+    color: #ffffff; /* Set text color of the paragraph to white */
+}
+
+.inside-about {
+    color: black; /* Set text color of inside-about div to black */
+    display: flex; /* Make the divs inside flex containers */
+    justify-content:space-between; /* Space the divs evenly */
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.inside-about .left, .inside-about .right {
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 40%;
+    margin-right: 10px; /* Divide the space evenly between left and right divs */
+}
+.feedback {
+    text-align: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 110px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.feedback h2 {
+    margin-bottom: 20px;
+}
+
+.feedback p {
+    color: #FFD700;
+}
+
+.inside-feedback { 
+    color: black; /* Set text color of inside-about div to black */
+    overflow: auto; /* Clear float */
+    border-radius: 20px;
+}
+
+.inside-feedback .left {
+    background-color: #ffffff;
+    width: 45%;
+    float: left; /* Float the divs left */
+    margin-right: 10px; /* Add margin between left and right divs */
+    border-radius: 30px;
+}
+.inside-feedback .right{
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 45%;
+    float: right; /* Float the divs left */
+    margin-right: 10px; /* Add margin between left and right divs */
+}
+.inside-feedback .left .stars,
+.inside-feedback .right .stars {
+    color: gold; /* Set the color of stars to gold */
+}
+.slogan{
+    color: #FFD700;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 70%;
+    margin-bottom: 40px;
+}
+#logout-btn,
+#account-info-btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 30px;
+}
+
+#logout-btn:hover,
+#account-info-btn:hover {
+    transform: scale(1.1);
+}
+#logout-btn{
+    margin-bottom: 3px;
+}

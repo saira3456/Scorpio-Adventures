@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: midnightblue;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+}
+
+.headder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    /* Facebook blue */
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    /* Twitter blue */
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    /* Instagram pink */
+    color: white;
+}
+
+ul {
+    color: #FFD700;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFD700;
+    /* set color of links to yellow */
+    text-decoration: none;
+    /* remove underlining */
+}
+
+.headder .navbar li a {
+    color: #FFD700;
+    /* set color of account button to yellow */
+}
+
+.headder ul {
+    display: flex;
+    flex-direction: row;
+    /* Display list items in a column */
+    align-items: flex-end;
+    /* Align items to the end of the column */
+}
+
+.headder li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    /* Add space between list items */
+}
+
+.headder li a {
+    color: #FFD700;
+    /* Set color of text to golden */
+}
+
+.headder li i {
+    color: white;
+    /* Set color of icons to white */
+}
+
+.bgimage img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* Ensure the image covers the entire container */
+    z-index: -1;
+}
+
+.bookings {
+    background-color: white;
+    width: 92%;
+    margin: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+
+.booking {
+    display: flex;
+    width: 100%;
+}
+
+.booking form {
+    flex: 1;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-group label {
+    color: #425E6F;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.form-group input,
+.form-group select {
+    flex: 5;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    /* Make all inputs and selects fill their container */
+}
+
+.booking button {
+    padding: 10px;
+    background-color: #425E6F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 110px;
+    /* Allow the button to adjust its width based on content */
+}
+
+.booking button:hover {
+    background-color: #364754;
+}
+
+.booking img {
+    float: right;
+    height: 100%;
+    width: auto;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.below {
+    text-align: center;
+    /* Center the list items */
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.below h2 {
+    margin-bottom: 20px;
+    text-align: start;
+    margin-bottom: 0px;
+    /* Add some space below the h2 */
+}
+
+.below p {
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    /* Set text color of the paragraph to white */
+}
+
+.mid {
+    padding: 10px;
+    margin: 30px;
+    align-items: end;
+    position: relative;
+
+}
+
+.download {
+    background-color: #ffffff;
+    color: #425E6F;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 30px;
+    margin-left: 85%;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.download:hover {
+    color: #364754;
+    transform: scale(1.1);
+}
+
+.form-group p {
+    display: block;
+    margin-bottom: 10px;
+    /* Add some bottom margin for spacing */
+}
+
+#logout-btn,
+#account-info-btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 30px;
+}
+
+#logout-btn:hover,
+#account-info-btn:hover {
+    transform: scale(1.1);
+}
+
+#logout-btn {
+    margin-bottom: 3px;
+}
+
+#bookingForm h1 {
+    color: #3B5998;
+}

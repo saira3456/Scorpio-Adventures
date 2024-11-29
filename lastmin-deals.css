@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: midnightblue;
+    color: #FFD700;
+}
+
+.headder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    height: 50px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    text-align: center;
+    font-style: italic;
+    position: relauve;
+    padding-top: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    /* Facebook blue */
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    /* Twitter blue */
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    /* Instagram pink */
+    color: white;
+}
+
+ul {
+    color: #FFD700;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFD700;
+    /* set color of links to yellow */
+    text-decoration: none;
+    /* remove underlining */
+}
+
+.headder .navbar li a {
+    color: #FFD700;
+    /* set color of account button to yellow */
+}
+
+.headder ul {
+    display: flex;
+    flex-direction: row;
+    /* Display list items in a column */
+    align-items: flex-end;
+    /* Align items to the end of the column */
+}
+
+.headder li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    /* Add space between list items */
+}
+
+.headder li a {
+    color: #FFD700;
+    /* Set color of text to golden */
+}
+
+.headder li i {
+    color: white;
+    /* Set color of icons to white */
+}
+
+.bgimage img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+
+#center_div {
+    display: flex;
+    justify-content: center;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    transition:  transform 0.3s;
+}
+
+.card:hover {
+    
+    transform: scale(1.1);
+}
+
+.card a {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.detail {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#content {
+    align-items: center;
+    padding: 20px;
+
+}
+
+#image {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hotel-icon {
+    color: #FF6347;
+}
+
+.cruise-icon {
+    color: #1E90FF;
+}
+
+.restaurant-icon {
+    color: #32CD32;
+}
+
+.booking-icon {
+    color: #FFD700;
+}
+
+.vacation-icon {
+    color: #FF69B4;
+}
+
+
+
+.ad-container {
+    height: 20%;
+    color: black;
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 70%;
+    max-width: 650px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: translateY(120%);
+    margin-bottom: 50px;
+}
+
+.ad-left {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: left;
+    border-right: 1px solid #ccc;
+    flex: 1;
+}
+
+.ad-left p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.ad-right {
+    padding: 10px;
+    flex: 3;
+    margin-bottom: 30px;
+}
+
+.ad-right p {
+    margin: 0 0 20px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.see-more {
+    background-color: #425E6F;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.see-more:hover {
+    background-color: #314659;
+    transform: scale(1.1);
+}
+#logout-btn,
+#account-info-btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 30px;
+}
+
+#logout-btn:hover,
+#account-info-btn:hover {
+    transform: scale(1.1);
+}
+#logout-btn{
+    margin-bottom: 3px;
+}

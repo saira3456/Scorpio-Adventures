@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+    <title>Create Your Own Offer</title>
+    <link rel="stylesheet" href="../css files/Create-offer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css files/createOffer.css">
+    <script src="../javascript/offers.js"></script>
+</head>
+
+<body>
+    <div class="headder">
+        <div class="logo">
+            <img src="../asserts/Green and Blue Playful Illustrated World Travel Logo.png" alt="logo" width="70px">
+        </div>
+        <h1>Scorpio Adventures</h1>
+        <ul>
+            <li><a href="../html code/Home.html">Home <i class="fas fa-home"></i></a></li>
+            <li id="account-options">
+                <a href="../html code/login.html" id="account-link"><i class="fas fa-user"></i></a>
+                <div id="account-dropdown" style="display: none;">
+                    <button id="logout-btn">Logout</button>
+                    <button id="account-info-btn">Account Info</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="bgimage">
+            <img src="../asserts/Large picture of starry sky with constellation, night sky as texture or background.jpg" alt="background pic">
+        </div>
+    </div>
+    <div class="offer-section">
+        <h2>Make Your Own Offer</h2>
+        <form id="offer-form">
+            <div class="form-group">
+                <label for="Trip Type">Is this a solo trip?</label>
+                <select id="solo-trip" name="solo-trip">
+                    <option value="Choose">choose</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="duration">Time Duration (days):</label>
+                <input type="number" id="duration" name="duration" min="1" required placeholder="select days for trip">
+            </div>
+            <div class="form-group">
+                <label for="country">Destination Country:</label>
+                <select id="country" name="country">
+                    <option value="Choose">Choose</option>
+                    <option value="USA" data-price="28500">USA - ₨28500</option>
+                    <option value="France" data-price="42750">France - ₨42750</option>
+                    <option value="Japan" data-price="57000">Japan - ₨57000</option>
+                    <option value="Greece" data-price="37050">Greece - ₨37050</option>
+                    <option value="Italy" data-price="31350">Italy - ₨31350</option>
+                    <option value="Australia" data-price="48450">Australia - ₨48450</option>
+                    <option value="Turkey" data-price="34200">Turkey - ₨34200</option>
+                    <option value="Denmark" data-price="51300">Denmark - ₨51300</option>
+                    <option value="Paris" data-price="43575">Paris - ₨43575</option>
+                    <option value="Pakistan" data-price="17100">Pakistan - ₨17100</option>
+                    <option value="India" data-price="12825">India - ₨12825</option>
+                    <option value="South Korea" data-price="59850">South Korea - ₨59850</option>
+                    <option value="japan" data-price="48450">Japan - ₨48450</option>
+                    <option value="Iceland" data-price="68400">Iceland - ₨68400</option>
+                    <option value="Alaska" data-price="45600">Alaska - ₨45600</option>
+                    <option value="Bali" data-price="37050">Bali - ₨37050</option>
+                    <option value="Maldives" data-price="48450">Maldives - ₨48450</option>
+                    <option value="London" data-price="51300">London - ₨51300</option>
+                    <option value="Spain" data-price="57000">Spain - ₨57000</option>
+                    <option value="Switzerland" data-price="68400">Switzerland - ₨68400</option>
+                </select>                
+            </div>
+            <div class="form-group">
+                <label for="hotel">Hotel Type:</label>
+                <select id="hotel" name="hotel">
+                    <option value="Choose">Choose</option>
+                    <option value="5-star" data-price="5000">5-star - ₨5000/night</option>
+                    <option value="7-Star" data-price="10000">7-star - ₨10000/night</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="restaurant">Restaurant Type:</label>
+                <select id="restaurant" name="restaurant">
+                    <option value="Choose"> Choose</option>
+                    <option value="Casual" data-price="3000">Casual - ₨3000/day</option>
+                    <option value="Fine Dining" data-price="6000">Fine Dining - ₨6000/day</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateOffer()">Calculate Total</button>
+        </form>
+        <p id="total-price"><strong>Price: ₨ 0</strong> </p>
+        <p id="discounted-price"><strong>Discounted Price: ₨ 0</strong></p>
+    </div>
+    <button class="Go-Back"onclick="window.location.href = 'Offers.html';">GO Back</button>
+    <div class="footer">
+        © [2024] Scorpio Adventures<br>
+        All rights reserved<br>
+        <span class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </span>
+    </div>
+</body>
+
+</html>

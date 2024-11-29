@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: midnightblue;
+    color: #FFD700;
+}
+
+.headder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    /* Facebook blue */
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    /* Twitter blue */
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    /* Instagram pink */
+    color: white;
+}
+
+ul {
+    color: #FFD700;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFD700;
+    /* set color of links to yellow */
+    text-decoration: none;
+    /* remove underlining */
+}
+
+.headder .navbar li a {
+    color: #FFD700;
+    /* set color of account button to yellow */
+}
+
+.headder ul {
+    display: flex;
+    flex-direction: row;
+    /* Display list items in a column */
+    align-items: flex-end;
+    /* Align items to the end of the column */
+}
+
+.headder li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    /* Add space between list items */
+}
+
+.headder li a {
+    color: #FFD700;
+    /* Set color of text to golden */
+}
+
+.headder li i {
+    color: white;
+    /* Set color of icons to white */
+}
+
+.bgimage img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* Ensure the image covers the entire container */
+    z-index: -1;
+}
+
+.offer-section {
+    text-align: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.offer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-section .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 10px 0;
+}
+
+.offer-section label {
+    margin-right: 10px;
+    width: 30%;
+    text-align: left;
+}
+
+.offer-section select,
+.offer-section input {
+    flex: 1;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.offer-section button {
+    background-color: #FFD700;
+    color: midnightblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.offer-section button:hover {
+    opacity: 0.8;
+}
+
+#total-price, #discounted-price {
+    margin-top: 20px;
+}
+.Go-Back{
+
+    background-color: white;
+    color: #3B5998;
+    margin-left: 72%;
+    border-radius: 30px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+    height: 40px;
+    width: 120px;
+    transition:color 0.3s, transform 0.3s;
+}
+.Go-Back:hover{
+    transform: scale(1.1);
+    color:#0a296a;
+}
+#logout-btn,
+#account-info-btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 30px;
+}
+
+#logout-btn:hover,
+#account-info-btn:hover {
+    transform: scale(1.1);
+}
+#logout-btn{
+    margin-bottom: 3px;
+}

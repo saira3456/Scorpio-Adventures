@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: midnightblue;
+    color: #FFD700;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 20px;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added alignment */
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+.center-content {
+    border-radius: 10px;
+    padding: 10px;
+    width: 85%; /* Adjusted width */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added alignment */
+}
+#image{
+    max-width: 90%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-form{
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 7px;
+    height: 50px;
+    width: 70%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003465;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    height: 50px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgba(66, 94, 111, 0.64);
+    color: #FFD700;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    color: white;
+}
+
+ul {
+    color: #FFD700;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.headder ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.headder li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.bgimage img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    flex: 1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: auto;
+    max-width: 500px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    color: black;
+    /* Stack elements vertically */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: white;
+
+    /* Space between label-input and error message */
+}
+
+.input-wrapper label {
+    margin-right: 10px;
+    color: white;
+
+    width: 150px;
+    /* Adjust the width as needed */
+    text-align: right;
+}
+
+.input-wrapper input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: lime;
+    margin-top: 5px;
+    /* Space between input and error message */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveButton,
+#cancelButton {
+    background-color: white;
+    color: #364754;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#saveButton:hover,
+#cancelButton:hover {
+    color: #2c404f;
+    transform: scale(1.1);
+}
+
+.outer{
+    background-color: rgba(66, 94, 111, 0.64);
+    max-width: 800px;
+    padding: auto;
+    display: flex;
+    flex: 4;
+    color: #FFD700;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.outer h1{
+    margin-bottom: 5px;
+}

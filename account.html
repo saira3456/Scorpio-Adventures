@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts </title>
+    <link rel="stylesheet" href="../css files/accounts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="headder">
+        <div class="logo">
+            <img src="../asserts/Green and Blue Playful Illustrated World Travel Logo.png" alt="logo" width="70px">
+        </div>
+        <h1>Scorpio Adventures</h1>
+        <ul>
+            <li><a href="../html code/Home.html">Home <i class="fas fa-home"></i></a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="bgimage">
+            <img src="../asserts/Large picture of starry sky with constellation, night sky as texture or background.jpg"
+                alt="background pic">
+        </div>
+        <div class="outer">
+            <h1>User Account</h1>
+            <div class="container">
+                <div class="center-content">
+                    <img class="profile-image" id="profile-image" src="placeholder.png" alt="">
+                    <form class="profile-form" id="profile-form">
+                        <div class="form-group">
+                            <label for="image">Profile Image:</label>
+                            <input type="file" id="image" name="image" onchange="displayImage()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <form id="myForm">
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required
+                            placeholder="Enter Your First Name Here">
+                    </div>
+                    <div class="error" id="firstNameError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required
+                            placeholder="Enter Your Last Name Here">
+                    </div>
+                    <div class="error" id="lastNameError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required placeholder="Enter your City name">
+                    </div>
+                    <div class="error" id="cityError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required placeholder="Enter state name">
+                    </div>
+                    <div class="error" id="stateError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required placeholder="Enter Address">
+                    </div>
+                    <div class="error" id="addressError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="abc123@gmail.com">
+                    </div>
+                    <div class="error" id="emailError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Strong password">
+                    </div>
+                    <div class="error" id="passwordError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required
+                            placeholder="12345678909">
+                    </div>
+                    <div class="error" id="phoneError"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="creditCard">Credit Card Number:</label>
+                        <input type="text" id="creditCard" name="creditCard" pattern="[0-9]{16}" required
+                            placeholder="1234567890987654">
+                    </div>
+                    <div class="error" id="creditCardError"></div>
+                </div>
+
+                <div class="button-row">
+                    <button type="button" id="saveButton">Save</button>
+                    <button type="button" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="savedMessage" style="display: none;">User data saved!</div>
+    </div>
+    </div>
+    <div class="footer">
+        © [2024] Scorpio Adventures<br>
+        All rights preserved<br>
+        <span class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </span>
+
+    </div>
+    <script src="../javascript/accounts.js"></script>
+
+</body>
+
+</html>
